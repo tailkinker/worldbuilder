@@ -6,16 +6,14 @@ uses
   {$IFDEF UNIX}{$IFDEF UseCThreads}
   cthreads,
   {$ENDIF}{$ENDIF}
-  Interfaces, // this includes the LCL widgetset
-  Forms, world
-  { you can add units after this };
+  Interfaces, Forms, world, drandom;
 
 {$R *.res}
 
 begin
   RequireDerivedFormResource := True;
   Application.Initialize;
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TfrmWorldWizard, frmWorldWizard);
   Application.Run;
 end.
 
