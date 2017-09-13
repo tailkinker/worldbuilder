@@ -9,7 +9,7 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="2"/>
         <CursorPos X="44" Y="17"/>
-        <UsageCount Value="49"/>
+        <UsageCount Value="67"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
@@ -19,12 +19,14 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="284"/>
-        <CursorPos X="32" Y="297"/>
-        <UsageCount Value="49"/>
-        <Bookmarks Count="2">
-          <Item0 X="8" Y="181"/>
-          <Item1 X="33" Y="321" ID="1"/>
+        <TopLine Value="462"/>
+        <CursorPos X="5" Y="485"/>
+        <FoldState Value=" TJiL1:011;"/>
+        <UsageCount Value="67"/>
+        <Bookmarks Count="3">
+          <Item0 X="8" Y="252"/>
+          <Item1 X="33" Y="550" ID="2"/>
+          <Item2 X="42" Y="474" ID="1"/>
         </Bookmarks>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -34,7 +36,7 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="1"/>
         <CursorPos X="76" Y="37"/>
-        <UsageCount Value="49"/>
+        <UsageCount Value="67"/>
         <Loaded Value="True"/>
       </Unit2>
       <Unit3>
@@ -45,7 +47,7 @@
         <EditorIndex Value="3"/>
         <CursorPos Y="28"/>
         <ComponentState Value="1"/>
-        <UsageCount Value="48"/>
+        <UsageCount Value="66"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit3>
@@ -53,167 +55,140 @@
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="fworld.pas"/>
-        <Caret Line="298" TopLine="284"/>
+        <Caret Line="489" TopLine="478"/>
       </Position1>
       <Position2>
         <Filename Value="fworld.pas"/>
-        <Caret Line="299" TopLine="284"/>
+        <Caret Line="484" TopLine="478"/>
       </Position2>
       <Position3>
         <Filename Value="fworld.pas"/>
-        <Caret Line="302" TopLine="284"/>
+        <Caret Line="489" TopLine="478"/>
       </Position3>
       <Position4>
         <Filename Value="fworld.pas"/>
-        <Caret Line="320" TopLine="309"/>
+        <Caret Line="484" TopLine="478"/>
       </Position4>
       <Position5>
         <Filename Value="fworld.pas"/>
-        <Caret Line="333" TopLine="322"/>
+        <Caret Line="489" TopLine="478"/>
       </Position5>
       <Position6>
         <Filename Value="fworld.pas"/>
-        <Caret Line="334" TopLine="322"/>
+        <Caret Line="484" TopLine="478"/>
       </Position6>
       <Position7>
         <Filename Value="fworld.pas"/>
-        <Caret Line="335" TopLine="322"/>
+        <Caret Line="489" TopLine="478"/>
       </Position7>
       <Position8>
         <Filename Value="fworld.pas"/>
-        <Caret Line="336" TopLine="322"/>
+        <Caret Line="484" TopLine="478"/>
       </Position8>
       <Position9>
         <Filename Value="fworld.pas"/>
-        <Caret Line="337" TopLine="322"/>
+        <Caret Line="489" TopLine="478"/>
       </Position9>
       <Position10>
         <Filename Value="fworld.pas"/>
-        <Caret Line="338" TopLine="322"/>
+        <Caret Line="484" TopLine="478"/>
       </Position10>
       <Position11>
         <Filename Value="fworld.pas"/>
-        <Caret Line="339" TopLine="322"/>
+        <Caret Line="489" TopLine="478"/>
       </Position11>
       <Position12>
         <Filename Value="fworld.pas"/>
-        <Caret Line="340" TopLine="322"/>
+        <Caret Line="484" TopLine="478"/>
       </Position12>
       <Position13>
         <Filename Value="fworld.pas"/>
-        <Caret Line="341" TopLine="322"/>
+        <Caret Line="489" TopLine="478"/>
       </Position13>
       <Position14>
         <Filename Value="fworld.pas"/>
-        <Caret Line="342" TopLine="323"/>
+        <Caret Line="473" TopLine="462"/>
       </Position14>
       <Position15>
         <Filename Value="fworld.pas"/>
-        <Caret Line="343" TopLine="324"/>
+        <Caret Line="490" TopLine="469"/>
       </Position15>
       <Position16>
         <Filename Value="fworld.pas"/>
-        <Caret Line="335" TopLine="324"/>
+        <Caret Line="505" TopLine="494"/>
       </Position16>
       <Position17>
         <Filename Value="fworld.pas"/>
-        <Caret Line="336" TopLine="324"/>
+        <Caret Line="480" Column="11" TopLine="463"/>
       </Position17>
       <Position18>
         <Filename Value="fworld.pas"/>
-        <Caret Line="337" TopLine="324"/>
+        <Caret Line="261" Column="8" TopLine="240"/>
       </Position18>
       <Position19>
         <Filename Value="fworld.pas"/>
-        <Caret Line="320" TopLine="309"/>
+        <Caret Line="478" TopLine="469"/>
       </Position19>
       <Position20>
         <Filename Value="fworld.pas"/>
-        <Caret Line="333" TopLine="322"/>
+        <Caret Line="479" TopLine="469"/>
       </Position20>
       <Position21>
         <Filename Value="fworld.pas"/>
-        <Caret Line="320" TopLine="309"/>
+        <Caret Line="465" Column="24" TopLine="454"/>
       </Position21>
       <Position22>
         <Filename Value="fworld.pas"/>
-        <Caret Line="333" TopLine="322"/>
+        <Caret Line="484" Column="11" TopLine="454"/>
       </Position22>
       <Position23>
         <Filename Value="fworld.pas"/>
-        <Caret Line="320" TopLine="309"/>
+        <Caret Line="246" Column="11" TopLine="230"/>
       </Position23>
       <Position24>
         <Filename Value="fworld.pas"/>
-        <Caret Line="347" Column="7" TopLine="327"/>
+        <Caret Line="473" Column="25" TopLine="451"/>
       </Position24>
       <Position25>
         <Filename Value="fworld.pas"/>
-        <Caret Line="295" TopLine="284"/>
+        <Caret Line="252" Column="8" TopLine="231"/>
       </Position25>
       <Position26>
         <Filename Value="fworld.pas"/>
-        <Caret Line="359" TopLine="344"/>
+        <Caret Line="473" Column="39" TopLine="451"/>
       </Position26>
       <Position27>
         <Filename Value="fworld.pas"/>
-        <Caret Line="218" Column="34" TopLine="207"/>
+        <Caret Line="535" Column="33" TopLine="451"/>
       </Position27>
       <Position28>
         <Filename Value="fworld.pas"/>
-        <Caret Line="326" Column="30" TopLine="312"/>
+        <Caret Line="264" Column="8" TopLine="231"/>
       </Position28>
       <Position29>
         <Filename Value="fworld.pas"/>
-        <Caret Line="191" Column="24" TopLine="180"/>
+        <Caret Line="484" Column="34" TopLine="451"/>
       </Position29>
       <Position30>
         <Filename Value="fworld.pas"/>
-        <Caret Line="85" Column="25" TopLine="68"/>
+        <Caret Line="496" Column="15" TopLine="469"/>
       </Position30>
     </JumpHistory>
   </ProjectSession>
   <Debugging>
-    <Watches Count="13">
+    <Watches Count="4">
       <Item1>
-        <Expression Value="index"/>
+        <Expression Value="x1"/>
       </Item1>
       <Item2>
-        <Expression Value="x"/>
+        <Expression Value="Done"/>
       </Item2>
       <Item3>
-        <Expression Value="y"/>
+        <Expression Value="y1"/>
       </Item3>
       <Item4>
-        <Expression Value="step"/>
+        <Expression Value="Political [x1, y1]"/>
       </Item4>
-      <Item5>
-        <Expression Value="start"/>
-      </Item5>
-      <Item6>
-        <Expression Value="mean"/>
-      </Item6>
-      <Item7>
-        <Expression Value="Count"/>
-      </Item7>
-      <Item8>
-        <Expression Value="xt"/>
-      </Item8>
-      <Item9>
-        <Expression Value="yt"/>
-      </Item9>
-      <Item10>
-        <Expression Value="distance"/>
-      </Item10>
-      <Item11>
-        <Expression Value="roll"/>
-      </Item11>
-      <Item12>
-        <Expression Value="x1"/>
-      </Item12>
-      <Item13>
-        <Expression Value="y1"/>
-      </Item13>
     </Watches>
   </Debugging>
 </CONFIG>
