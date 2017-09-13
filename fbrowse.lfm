@@ -1,0 +1,19 @@
+object frmWorldBrowser: TfrmWorldBrowser
+  Left = 303
+  Height = 400
+  Top = 169
+  Width = 600
+  Caption = 'World Browser'
+  Constraints.MinHeight = 400
+  Constraints.MinWidth = 600
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  LCLVersion = '1.6.0.4'
+  object MainMenu1: TMainMenu
+    left = 151
+    top = 82
+    object mnuFile: TMenuItem
+      Caption = '&File'
+    end
+  end
+end

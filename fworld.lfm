@@ -3,9 +3,11 @@ object frmWorldWizard: TfrmWorldWizard
   Height = 500
   Top = 612
   Width = 900
+  BorderStyle = bsDialog
   Caption = 'frmWorldWizard'
   ClientHeight = 500
   ClientWidth = 900
+  OnCreate = FormCreate
   OnResize = FormResize
   LCLVersion = '1.6.0.4'
   object nbWorldWizard: TNotebook
@@ -18,7 +20,7 @@ object frmWorldWizard: TfrmWorldWizard
     Height = 448
     Top = 0
     Width = 900
-    PageIndex = 0
+    PageIndex = 1
     Anchors = [akTop, akLeft, akRight, akBottom]
     BorderSpacing.Bottom = 8
     TabOrder = 0
@@ -29,8 +31,9 @@ object frmWorldWizard: TfrmWorldWizard
         AnchorSideTop.Control = pgWelcome
         Left = 8
         Height = 41
-        Top = 8
+        Top = 16
         Width = 550
+        BorderSpacing.Top = 8
         BorderSpacing.Around = 8
         Caption = 'Welcome to the World Builder!'
         Font.Color = clBlue
@@ -45,11 +48,12 @@ object frmWorldWizard: TfrmWorldWizard
         AnchorSideRight.Control = Image1
         Left = 8
         Height = 76
-        Top = 57
+        Top = 73
         Width = 508
         Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 8
         BorderSpacing.Around = 8
-        Caption = 'This program is designed to take some simple input and use it to create a complex fantasy world, suitable for any role-playing game (though with the option to tailor it to one of five different systems).'
+        Caption = 'This program is designed to take some simple input and use it to create a complex fantasy campaign area, roughly the size of Canada, suitable for any role-playing game (though with the option to tailor it to one of five different systems).'
         Font.Height = 16
         ParentColor = False
         ParentFont = False
@@ -62,9 +66,10 @@ object frmWorldWizard: TfrmWorldWizard
         AnchorSideRight.Control = Image1
         Left = 8
         Height = 38
-        Top = 141
+        Top = 165
         Width = 508
         Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 8
         BorderSpacing.Around = 8
         Caption = 'Do you wish to load an already-constructed world, or start a new world?'
         Font.Height = 16
@@ -79,7 +84,7 @@ object frmWorldWizard: TfrmWorldWizard
         AnchorSideRight.Side = asrBottom
         Left = 524
         Height = 360
-        Top = 57
+        Top = 65
         Width = 360
         Anchors = [akTop, akRight]
         Picture.Data = {
@@ -2560,6 +2565,296 @@ object frmWorldWizard: TfrmWorldWizard
         }
       end
     end
+    object pgBase: TPage
+      object Label4: TLabel
+        AnchorSideLeft.Control = pgBase
+        AnchorSideTop.Control = pgBase
+        AnchorSideRight.Control = pgBase
+        AnchorSideRight.Side = asrBottom
+        Left = 8
+        Height = 57
+        Top = 16
+        Width = 884
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 8
+        BorderSpacing.Around = 8
+        Caption = 'Let''s start by getting some working information.  We''ll need the name of your campaign area - a minimum of six letters.  This is used to create the random number seed used by the software, and ensures that the generated campaign area is always linked to the name.  (The name is case insensitive.)'
+        Font.Height = 16
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+      end
+      object labWorldName: TLabel
+        AnchorSideLeft.Control = pgBase
+        AnchorSideTop.Control = txtWorldName
+        AnchorSideTop.Side = asrCenter
+        Left = 8
+        Height = 15
+        Top = 85
+        Width = 81
+        BorderSpacing.Around = 8
+        Caption = 'World Name:'
+        ParentColor = False
+      end
+      object txtWorldName: TEdit
+        AnchorSideLeft.Control = labWorldName
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = Label4
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = pgBase
+        AnchorSideRight.Side = asrBottom
+        Left = 97
+        Height = 23
+        Top = 81
+        Width = 795
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Around = 8
+        OnChange = txtWorldNameChange
+        TabOrder = 0
+        Text = 'Svartalwold'
+      end
+      object Label6: TLabel
+        AnchorSideLeft.Control = pgBase
+        AnchorSideTop.Control = txtWorldName
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = pgBase
+        AnchorSideRight.Side = asrBottom
+        Left = 8
+        Height = 38
+        Top = 120
+        Width = 884
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 8
+        BorderSpacing.Around = 8
+        Caption = 'We will also need the working folder for the campaign area.  This folder is used to store files generated while browsing the campaign area.  It should not be used for anything other than the campaign area''s files.'
+        Font.Height = 16
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+      end
+      object labWorldFolder: TLabel
+        AnchorSideLeft.Control = pgBase
+        AnchorSideTop.Control = btnOpenFolder
+        AnchorSideTop.Side = asrCenter
+        Left = 8
+        Height = 15
+        Top = 175
+        Width = 81
+        BorderSpacing.Around = 8
+        Caption = 'World Folder:'
+        ParentColor = False
+      end
+      object txtWorldFolder: TEdit
+        AnchorSideLeft.Control = labWorldFolder
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = btnOpenFolder
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = btnOpenFolder
+        Left = 97
+        Height = 23
+        Top = 171
+        Width = 755
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Around = 8
+        OnChange = pgBaseUpdateState
+        TabOrder = 1
+        Text = '/home/larovita/Documents/Mine/Svartalwold'
+      end
+      object btnOpenFolder: TBitBtn
+        AnchorSideTop.Control = Label6
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = pgBase
+        AnchorSideRight.Side = asrBottom
+        Left = 860
+        Height = 32
+        Top = 166
+        Width = 32
+        Anchors = [akTop, akRight]
+        BorderSpacing.Around = 8
+        Glyph.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000064000000640000000000000000000000351600443012
+          0081301200822F1100842F1200852E1100862E1100882E1100892D1000892E11
+          00882E1100862F1100852F11008430120082301100813A190045A7754AB9DDA8
+          81FFD9A37DFFD9A47EFFD9A37CFFD9A378FFD9A37DFFD9A47EFFD9A47EFFD9A3
+          7EFFD9A379FFD9A37AFFD9A47EFFD8A37EFFE0A981FF805F46AEAD7F58FFDFAD
+          87FFDAA984FFDAA985FFDAA986FFDAA985FFDAA984FFDAA984FFDAA985FFDAA9
+          86FFDAA985FFDAA983FFDAA985FFDAA984FFE3B08AFF816450FF9B6739FFB476
+          40FFB0743FFFB0743FFFB0743FFFB0743EFFB07440FFB0743FFFB07440FFB074
+          3FFFB0743FFFB0743FFFB0743FFFB0743FFFB97A43FF664427FFAA7A51FFE0AE
+          89FFDBA983FFDBA983FFDBA986FFDBA985FFDBA987FFDBA985FFDBA984FFDBA9
+          85FFDBA986FFDBA984FFDBA986FFDAA984FFE4B189FF7C5F4BFFA97950FFDDAC
+          87FFD8A780FFD8A781FFD8A781FFD8A782FFD8A781FFD8A782FFD8A780FFD8A7
+          80FFD8A780FFD8A782FFD8A781FFD8A781FFE1AE87FF7B5F49FFAA7A51FFDEAF
+          89FFD9AA84FFD9AA85FFD9AA83FFD9AA85FFD9A983FFD9AA84FFD9AA85FFD9AA
+          84FFD9AA83FFD9AA85FFD9AA84FFD9A984FFE3B18BFF7C614AFFAA7B52FFDFB1
+          8DFFDAAC87FFDAAC87FFDAAC89FFDAAC86FFDAAC87FFDAAC87FFDAAC86FFDAAC
+          8AFFDAAC86FFDAAC87FFDAAC87FFDAAC87FFE4B38DFF7D624EFFA97C53FFDFB0
+          8BFFD9AA87FFD9AA87FFD9AA86FFD9AA86FFDAAB88FFDAAE87FFDAAE8CFFDAAE
+          8AFFDAAE89FFDAAE8AFFDAAE8AFFDAAE8AFFE5B591FF7D634EFF9F7954FFF8E4
+          C7FFF1DABAFFF2DCBCFFF2DCBCFFF3DBBBFFEDD4B4FFDCB18EFFDAAC88FFDAAC
+          89FFDAAC8AFFDAAC8AFFDAAC89FFDBB08DFFE3B48EFF79614DFF603D20FF9F70
+          49FF8A5327FF8B552AFF8C552AFF7F4C22FFB18F6DFFF4DDBEFFF3DBBCFFF3DB
+          BCFFF3DBBCFFF4DBBCFFF2DBBCFFF5DFC3FFFBE2C1FFCEB699BA7A512FFFD6A2
+          77FFC28352FFC28555FFC28452FFBF7F4FFFA36A3AFF935B2FFF935A2DFF935A
+          2EFF935B2EFF935A2EFF93592BFFA6744CFF633A19FF0000000092633DFFE1AF
+          86FFCD8C56FFCF8C58FFD8A379FFE0AF8AFFE1AF88FFE1AF87FFDFAE85FFE1AD
+          84FFDEAA81FFDFA97FFFDDA77DFFE2A97DFFAD7649FF00000000A67249FFEFB9
+          8FFFEAB68EFFEBB890FFEFBB93FFB1794BFEB77F51FFBA8051FFBA8053FFBA80
+          51FFBA8253FFBA8153FFBA8254FFBB8154FFC28758D500000000B57F54C9B780
+          51FFB77F51FFB77F52FFB87E52FFBB8456D40000000000000000000000000000
+          00000000000000000000000000000000000000000000B57F5400000000000000
+          000000000000000000000000000000000000B47F540000000000000000000000
+          0000000000000000000000000000000000000000000000000000
+        }
+        OnClick = btnOpenFolderClick
+        TabOrder = 2
+      end
+      object Label5: TLabel
+        AnchorSideLeft.Control = pgBase
+        AnchorSideTop.Control = btnOpenFolder
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = rdgClimateZones
+        Left = 8
+        Height = 38
+        Top = 214
+        Width = 620
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 8
+        BorderSpacing.Around = 8
+        Caption = 'Finally, we also need to get the climate zone for the campaign area.  This will affect weather patters, subsistence zones and population.'
+        Font.Height = 16
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+      end
+      object rdgClimateZones: TRadioGroup
+        AnchorSideTop.Control = btnOpenFolder
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = pgBase
+        AnchorSideRight.Side = asrBottom
+        Left = 636
+        Height = 164
+        Top = 206
+        Width = 256
+        Anchors = [akTop, akRight]
+        AutoFill = True
+        AutoSize = True
+        BorderSpacing.Around = 8
+        Caption = 'Climate Zones'
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+        ChildSizing.EnlargeVertical = crsHomogenousChildResize
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 1
+        ClientHeight = 147
+        ClientWidth = 252
+        ItemIndex = 1
+        Items.Strings = (
+          'Sub-Arctic to Temperate (North)'
+          'Temperate to Sub-Tropical (North)'
+          'Sub-Tropical to Tropical (North)'
+          'Tropical (On The Equator)'
+          'Tropical to Sub-Tropical (South)'
+          'Sub-Tropical to Temperate (South)'
+          'Temperate to Sub-Arctic (South)'
+        )
+        TabOrder = 3
+      end
+      object Label7: TLabel
+        AnchorSideLeft.Control = pgBase
+        AnchorSideTop.Control = txtRandomSeed
+        AnchorSideTop.Side = asrCenter
+        Left = 8
+        Height = 15
+        Top = 421
+        Width = 150
+        BorderSpacing.Around = 8
+        Caption = 'Random Number Seed:'
+        ParentColor = False
+      end
+      object txtRandomSeed: TEdit
+        AnchorSideLeft.Control = Label7
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideBottom.Control = pgBase
+        AnchorSideBottom.Side = asrBottom
+        Left = 166
+        Height = 23
+        Top = 417
+        Width = 160
+        Alignment = taCenter
+        Anchors = [akLeft, akBottom]
+        BorderSpacing.Around = 8
+        ReadOnly = True
+        TabOrder = 4
+      end
+    end
+    object pgFractalMap: TPage
+      object labStatus: TLabel
+        AnchorSideLeft.Control = pgFractalMap
+        AnchorSideTop.Control = pgFractalMap
+        Left = 8
+        Height = 19
+        Top = 16
+        Width = 334
+        BorderSpacing.Top = 8
+        BorderSpacing.Around = 8
+        Caption = 'Please wait.  I am creating the world map...'
+        Font.Height = 16
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+      end
+      object picFractalMap: TImage
+        AnchorSideTop.Control = labStatus
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = pgFractalMap
+        AnchorSideRight.Side = asrBottom
+        Left = 379
+        Height = 257
+        Top = 43
+        Width = 513
+        Anchors = [akTop, akRight]
+        BorderSpacing.Around = 8
+      end
+      object txtFractalLog: TMemo
+        AnchorSideLeft.Control = pgFractalMap
+        AnchorSideTop.Control = labStatus
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = picFractalMap
+        AnchorSideBottom.Control = pgFractalMap
+        AnchorSideBottom.Side = asrBottom
+        Left = 8
+        Height = 397
+        Top = 43
+        Width = 363
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderSpacing.Around = 8
+        ReadOnly = True
+        ScrollBars = ssAutoVertical
+        TabOrder = 0
+      end
+      object pgbFractalMap: TProgressBar
+        AnchorSideLeft.Control = txtFractalLog
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = picFractalMap
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = pgFractalMap
+        AnchorSideRight.Side = asrBottom
+        Left = 379
+        Height = 20
+        Top = 308
+        Width = 513
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Around = 8
+        Max = 131839
+        Smooth = True
+        Step = 513
+        TabOrder = 1
+      end
+    end
   end
   object btnNext: TBitBtn
     AnchorSideRight.Control = Owner
@@ -2573,6 +2868,7 @@ object frmWorldWizard: TfrmWorldWizard
     Anchors = [akRight, akBottom]
     BorderSpacing.Around = 8
     Caption = 'New'
+    OnClick = btnNextClick
     TabOrder = 1
   end
   object btnPrevious: TBitBtn
@@ -2586,6 +2882,15 @@ object frmWorldWizard: TfrmWorldWizard
     Anchors = [akRight, akBottom]
     BorderSpacing.Around = 8
     Caption = 'Load'
+    OnClick = btnPreviousClick
     TabOrder = 2
+  end
+  object OpenDialog1: TOpenDialog
+    left = 24
+    top = 464
+  end
+  object SelectDirectoryDialog1: TSelectDirectoryDialog
+    left = 80
+    top = 464
   end
 end

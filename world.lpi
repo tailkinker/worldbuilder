@@ -32,7 +32,7 @@
         <PackageName Value="LCL"/>
       </Item1>
     </RequiredPackages>
-    <Units Count="3">
+    <Units Count="4">
       <Unit0>
         <Filename Value="world.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -48,6 +48,12 @@
         <Filename Value="drandom.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit2>
+      <Unit3>
+        <Filename Value="fbrowse.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmWorldBrowser"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit3>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

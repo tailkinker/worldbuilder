@@ -6,14 +6,15 @@ uses
   {$IFDEF UNIX}{$IFDEF UseCThreads}
   cthreads,
   {$ENDIF}{$ENDIF}
-  Interfaces, Forms, world, drandom;
+  Interfaces, Forms, fworld, drandom, fbrowse;
 
 {$R *.res}
 
 begin
   RequireDerivedFormResource := True;
   Application.Initialize;
-  Application.CreateForm(TfrmWorldWizard, frmWorldWizard);
+  Application.ShowMainForm := False;
+  Application.CreateForm(TfrmWorldBrowser, frmWorldBrowser);
   Application.Run;
 end.
 

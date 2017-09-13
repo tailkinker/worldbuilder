@@ -3,14 +3,13 @@
   <ProjectSession>
     <Version Value="9"/>
     <BuildModes Active="Default"/>
-    <Units Count="3">
+    <Units Count="4">
       <Unit0>
         <Filename Value="world.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <CursorPos Y="16"/>
-        <UsageCount Value="21"/>
+        <CursorPos X="44" Y="17"/>
+        <UsageCount Value="49"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
@@ -19,8 +18,14 @@
         <ComponentName Value="frmWorldWizard"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <CursorPos X="29" Y="9"/>
-        <UsageCount Value="21"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="284"/>
+        <CursorPos X="32" Y="297"/>
+        <UsageCount Value="49"/>
+        <Bookmarks Count="2">
+          <Item0 X="8" Y="181"/>
+          <Item1 X="33" Y="321" ID="1"/>
+        </Bookmarks>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
@@ -28,15 +33,187 @@
         <Filename Value="drandom.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="1"/>
-        <UsageCount Value="21"/>
+        <CursorPos X="76" Y="37"/>
+        <UsageCount Value="49"/>
         <Loaded Value="True"/>
       </Unit2>
+      <Unit3>
+        <Filename Value="fbrowse.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmWorldBrowser"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="3"/>
+        <CursorPos Y="28"/>
+        <ComponentState Value="1"/>
+        <UsageCount Value="48"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit3>
     </Units>
-    <JumpHistory Count="1">
+    <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="fworld.pas"/>
-        <Caret Line="9" Column="29"/>
+        <Caret Line="298" TopLine="284"/>
       </Position1>
+      <Position2>
+        <Filename Value="fworld.pas"/>
+        <Caret Line="299" TopLine="284"/>
+      </Position2>
+      <Position3>
+        <Filename Value="fworld.pas"/>
+        <Caret Line="302" TopLine="284"/>
+      </Position3>
+      <Position4>
+        <Filename Value="fworld.pas"/>
+        <Caret Line="320" TopLine="309"/>
+      </Position4>
+      <Position5>
+        <Filename Value="fworld.pas"/>
+        <Caret Line="333" TopLine="322"/>
+      </Position5>
+      <Position6>
+        <Filename Value="fworld.pas"/>
+        <Caret Line="334" TopLine="322"/>
+      </Position6>
+      <Position7>
+        <Filename Value="fworld.pas"/>
+        <Caret Line="335" TopLine="322"/>
+      </Position7>
+      <Position8>
+        <Filename Value="fworld.pas"/>
+        <Caret Line="336" TopLine="322"/>
+      </Position8>
+      <Position9>
+        <Filename Value="fworld.pas"/>
+        <Caret Line="337" TopLine="322"/>
+      </Position9>
+      <Position10>
+        <Filename Value="fworld.pas"/>
+        <Caret Line="338" TopLine="322"/>
+      </Position10>
+      <Position11>
+        <Filename Value="fworld.pas"/>
+        <Caret Line="339" TopLine="322"/>
+      </Position11>
+      <Position12>
+        <Filename Value="fworld.pas"/>
+        <Caret Line="340" TopLine="322"/>
+      </Position12>
+      <Position13>
+        <Filename Value="fworld.pas"/>
+        <Caret Line="341" TopLine="322"/>
+      </Position13>
+      <Position14>
+        <Filename Value="fworld.pas"/>
+        <Caret Line="342" TopLine="323"/>
+      </Position14>
+      <Position15>
+        <Filename Value="fworld.pas"/>
+        <Caret Line="343" TopLine="324"/>
+      </Position15>
+      <Position16>
+        <Filename Value="fworld.pas"/>
+        <Caret Line="335" TopLine="324"/>
+      </Position16>
+      <Position17>
+        <Filename Value="fworld.pas"/>
+        <Caret Line="336" TopLine="324"/>
+      </Position17>
+      <Position18>
+        <Filename Value="fworld.pas"/>
+        <Caret Line="337" TopLine="324"/>
+      </Position18>
+      <Position19>
+        <Filename Value="fworld.pas"/>
+        <Caret Line="320" TopLine="309"/>
+      </Position19>
+      <Position20>
+        <Filename Value="fworld.pas"/>
+        <Caret Line="333" TopLine="322"/>
+      </Position20>
+      <Position21>
+        <Filename Value="fworld.pas"/>
+        <Caret Line="320" TopLine="309"/>
+      </Position21>
+      <Position22>
+        <Filename Value="fworld.pas"/>
+        <Caret Line="333" TopLine="322"/>
+      </Position22>
+      <Position23>
+        <Filename Value="fworld.pas"/>
+        <Caret Line="320" TopLine="309"/>
+      </Position23>
+      <Position24>
+        <Filename Value="fworld.pas"/>
+        <Caret Line="347" Column="7" TopLine="327"/>
+      </Position24>
+      <Position25>
+        <Filename Value="fworld.pas"/>
+        <Caret Line="295" TopLine="284"/>
+      </Position25>
+      <Position26>
+        <Filename Value="fworld.pas"/>
+        <Caret Line="359" TopLine="344"/>
+      </Position26>
+      <Position27>
+        <Filename Value="fworld.pas"/>
+        <Caret Line="218" Column="34" TopLine="207"/>
+      </Position27>
+      <Position28>
+        <Filename Value="fworld.pas"/>
+        <Caret Line="326" Column="30" TopLine="312"/>
+      </Position28>
+      <Position29>
+        <Filename Value="fworld.pas"/>
+        <Caret Line="191" Column="24" TopLine="180"/>
+      </Position29>
+      <Position30>
+        <Filename Value="fworld.pas"/>
+        <Caret Line="85" Column="25" TopLine="68"/>
+      </Position30>
     </JumpHistory>
   </ProjectSession>
+  <Debugging>
+    <Watches Count="13">
+      <Item1>
+        <Expression Value="index"/>
+      </Item1>
+      <Item2>
+        <Expression Value="x"/>
+      </Item2>
+      <Item3>
+        <Expression Value="y"/>
+      </Item3>
+      <Item4>
+        <Expression Value="step"/>
+      </Item4>
+      <Item5>
+        <Expression Value="start"/>
+      </Item5>
+      <Item6>
+        <Expression Value="mean"/>
+      </Item6>
+      <Item7>
+        <Expression Value="Count"/>
+      </Item7>
+      <Item8>
+        <Expression Value="xt"/>
+      </Item8>
+      <Item9>
+        <Expression Value="yt"/>
+      </Item9>
+      <Item10>
+        <Expression Value="distance"/>
+      </Item10>
+      <Item11>
+        <Expression Value="roll"/>
+      </Item11>
+      <Item12>
+        <Expression Value="x1"/>
+      </Item12>
+      <Item13>
+        <Expression Value="y1"/>
+      </Item13>
+    </Watches>
+  </Debugging>
 </CONFIG>
